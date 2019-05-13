@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetLayout"
+    android:background="@android:color/holo_blue_bright"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="60dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+    <TextView
+        android:id="@+id/bottomSheetHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="expand me"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bottomSheetHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Hola"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+</RelativeLayout>
