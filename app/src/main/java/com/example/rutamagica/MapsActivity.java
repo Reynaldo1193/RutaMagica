@@ -2,8 +2,12 @@ package com.example.rutamagica;
 
 import android.location.Address;
 import android.location.Geocoder;
+import android.support.annotation.NonNull;
+import android.support.design.bottomappbar.BottomAppBar;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -20,12 +24,13 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
 
     private GoogleMap mMap;
     private  MarkerOptions marcadorInicial;
     private List<Address> addresses;
     private Geocoder geocoder;
+    private BottomSheetBehavior bottomSheetBehavior;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +40,27 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        initListeners();
+
+    }
+
+    private void initListeners(){
+        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottomSheetLayout));
+
+        bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+            @Override
+            public void onStateChanged(@NonNull View view, int i) {
+                if(i ==  BottomSheetBehavior.STATE_HIDDEN){
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }
+            }
+
+            @Override
+            public void onSlide(@NonNull View view, float v) {
+
+            }
+        });
     }
 
 
@@ -109,7 +135,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
     }
 
-    public void CreadorIconos(String titulo,double lat, double lng){
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    public void CreadorIconos(String titulo, double lat, double lng){
 
 
         LatLng posicion = new LatLng(lat,lng);
