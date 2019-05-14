@@ -1,5 +1,8 @@
 package com.example.rutamagica;
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
 import android.location.Address;
 import android.location.Geocoder;
 import android.support.annotation.NonNull;
@@ -7,7 +10,12 @@ import android.support.design.bottomappbar.BottomAppBar;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -31,7 +39,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private List<Address> addresses;
     private Geocoder geocoder;
     private BottomSheetBehavior bottomSheetBehavior;
-
+    private RelativeLayout bottomSheetLayout;
+    private TextView txtDrag;
+    private Button txtServicios,txtComida,txtHospedaje,txtTuristico;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,18 +51,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+
         initListeners();
+        Toast.makeText(getApplicationContext(),"This shit is collpased",Toast.LENGTH_LONG);
 
     }
 
+    /** Inicia los listeners y se encarga de la logica del bottom card
+     * Si se quiere modificar partes del diseño del bottom car se deberá ir al layout de bottom card
+     * **/
+
     private void initListeners(){
+        bottomSheetLayout = (RelativeLayout) findViewById(R.id.bottomSheetLayout);
         bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.bottomSheetLayout));
+        txtDrag = (TextView) findViewById(R.id.txtDrag);
+        txtComida = (Button) findViewById(R.id.txtComida);
+        txtHospedaje = (Button) findViewById(R.id.txtHospedaje);
+        txtServicios = (Button) findViewById(R.id.txtServicios);
+        txtTuristico = (Button) findViewById(R.id.txtTuristico);
 
         bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View view, int i) {
                 if(i ==  BottomSheetBehavior.STATE_HIDDEN){
                     bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }
+
+                switch (i){
+                    case BottomSheetBehavior.STATE_COLLAPSED:
+                        Toast.makeText(getApplicationContext(),"This shit is collpased",Toast.LENGTH_LONG);
+                        bottomSheetLayout.setBackgroundColor(Color.TRANSPARENT);
+                        txtDrag.setVisibility(View.VISIBLE);
+                        break;
+
+                    case BottomSheetBehavior.STATE_EXPANDED:
+                        bottomSheetLayout.setBackgroundColor(Color.WHITE);
+                        txtDrag.setVisibility(View.GONE);
+                        break;
                 }
             }
 
@@ -75,6 +110,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
 
         mMap.setMaxZoomPreference(18);
@@ -137,6 +173,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onClick(View v) {
+
+        Intent intent;
+
+        switch (v.getId()){
+
+            case R.id.txtComida:
+                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
+                 intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.txtHospedaje:
+                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.txtServicios:
+                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.txtTuristico:
+                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+
+        }
 
     }
 
