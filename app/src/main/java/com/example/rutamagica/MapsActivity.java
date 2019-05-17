@@ -32,9 +32,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, View.OnClickListener {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback{
 
     private GoogleMap mMap;
+    private Intent intent;
     private  MarkerOptions marcadorInicial;
     private List<Address> addresses;
     private Geocoder geocoder;
@@ -53,7 +54,38 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         initListeners();
-        Toast.makeText(getApplicationContext(),"This shit is collpased",Toast.LENGTH_LONG);
+
+        txtServicios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtComida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtHospedaje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtTuristico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(MapsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -79,13 +111,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 switch (i){
                     case BottomSheetBehavior.STATE_COLLAPSED:
-                        Toast.makeText(getApplicationContext(),"This shit is collpased",Toast.LENGTH_LONG);
                         bottomSheetLayout.setBackgroundColor(Color.TRANSPARENT);
                         txtDrag.setVisibility(View.VISIBLE);
                         break;
 
                     case BottomSheetBehavior.STATE_EXPANDED:
-                        bottomSheetLayout.setBackgroundColor(Color.WHITE);
+                        bottomSheetLayout.setBackgroundColor(Color.parseColor("#80FFFFFF"));
                         txtDrag.setVisibility(View.GONE);
                         break;
                 }
@@ -169,39 +200,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         });
-    }
-
-    @Override
-    public void onClick(View v) {
-
-        Intent intent;
-
-        switch (v.getId()){
-
-            case R.id.txtComida:
-                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
-                 intent = new Intent(MapsActivity.this, MainActivity.class);
-                startActivity(intent);
-                break;
-
-            case R.id.txtHospedaje:
-                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
-                intent = new Intent(MapsActivity.this, MainActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.txtServicios:
-                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
-                intent = new Intent(MapsActivity.this, MainActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.txtTuristico:
-                Toast.makeText(MapsActivity.this,"HOlA",Toast.LENGTH_SHORT);
-                intent = new Intent(MapsActivity.this, MainActivity.class);
-                startActivity(intent);
-                break;
-
-        }
-
     }
 
     public void CreadorIconos(String titulo, double lat, double lng){
