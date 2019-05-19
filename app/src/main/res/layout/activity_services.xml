@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".servicesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Servicios"
+                android:textSize="30dp"
+                android:layout_margin="15dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/estacionamiento" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="ESTACIONAMIENTOS:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="http://www.rojasciudad.net/nota.asp?n=&amp;id=10344\nXOLOC\nLunes a Domingo de 8:00 a 20:00\nESTACIONAMIENTO MUNICIPAL\nLunes a Domingo de 7:00 a 19:00\nESTACIONAMIENTO PUBLICO CENTRO HISTORICO\nLunes a Domingo de 8:00 a 20:00\nTelefono:5535086002" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="HOSPITALES:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOSPITAL DEL ESPIRITU SANTO:\nAbierto las 24 horas\nTeléfono: 58766102\nHOSPITAL SANTA ANITA:\nAbierto las 24 horas\nTeléfono: 58760394" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/hospital" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/banco" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="BANCOS:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BBVA BANCOMER\nLunes a Viernes de 8:00 a 16:00\nCajero Lunes a Domingo 24 horas.\nTeléfono: 55 52 26 26 63\nHSBC\nLunes a Viernes de 9:00 a 17:00\nCajero lunes a domingo 24 horas.\nTeléfono: 58761752\nSANTANDER\nLunes a Viernes de 9:00 a 16:00 Sábado de 9:00 a 14:00\nCajero de lunes a domingo 24 horas.\nTeléfono: 58765161" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="TRANSPORTE:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RADIO TAXIS EJECUTIVOS \nTeléfono: 58808251\nSITIO DE TAXIS SAN PEDRO E HIDALGO\nTeléfono: 58760226" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/transporte" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/gas" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="GASOLINERAS:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PEMEX\nAv.Insurgentes Esq.Calle Manuel Acuña, Texcacoa, 54605 Tepotzotlán, Méx.\nTOTAL TEPOZOTLAN NORTE\nTepotzotlán-Coyotepec, Cedros, 54605 Tepotzotlán, Méx.\nAUTOSERVICIO TEPOGAS\nAv. Insurgentes 10-103, San Martin, 54605 Tepotzotlán, Méx." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="OTROS:" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CAFE INTERNET\n
+Lunes a Viernes de 8:00 a 22:00 sábado y domingo 8:00 a 19:00\n
+Teléfono: 58764632\n
+FARMACIA SAN MIGUEL\n
+Lunes a Domingo de 9:00 a 8:00\n
+Teléfono: 5518767548\n
+OXOO TEPOZOTLAN CENTRO\n
+Abierto las 24 horas.\n
+Av Lic Adolfo López Mateos 18, San Martin, 54600 Tepotzotlán, Méx." />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/logofinal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+<!--
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTROS:" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Café Internet
+Lunes a Viernes de 8:00 a 22:00 sábado y domingo 8:00 a 19:00
+Teléfono: 58764632
+ Farmacia San Miguel
+Lunes a Domingo de 9:00 a 8:00
+Teléfono: 5518767548
+ Oxxo Tepotzotlán Centro
+Abierto las 24 horas.
+Av Lic Adolfo López Mateos 18, San Martin, 54600 Tepotzotlán, Méx." />-->
+
+
+
+</android.support.design.widget.CoordinatorLayout>

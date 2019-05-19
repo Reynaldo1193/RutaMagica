@@ -58,7 +58,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         txtServicios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MapsActivity.this, MainActivity.class);
+                intent = new Intent(MapsActivity.this, servicesActivity.class);
                 startActivity(intent);
             }
         });
@@ -66,7 +66,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         txtComida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MapsActivity.this, MainActivity.class);
+                intent = new Intent(MapsActivity.this, FoodActivity.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +74,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         txtHospedaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MapsActivity.this, MainActivity.class);
+                intent = new Intent(MapsActivity.this, Activity_hote.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +82,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         txtTuristico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MapsActivity.this, MainActivity.class);
+                intent = new Intent(MapsActivity.this, DondeActivity.class);
                 startActivity(intent);
             }
         });

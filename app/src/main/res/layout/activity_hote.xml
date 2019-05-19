@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity_hote">
+
+    <!--<ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="236dp"
+        android:layout_height="309dp"
+        app:srcCompat="@drawable/logofinal" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver en mapa" />
+
+-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:text="Hoteles"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/hotelvirreinato" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotel Resort &amp; Spa Puerta al Virreinato:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Calle Amistad 16, 54600 Tepotzotlán, México" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Este establecimiento se encuentra en Tepotzotlán, a 3,2 km del Museo del. El
+Virreinato, Resort &amp; Spa Puerta al Virreinato cuenta con piscina al aire libre y
+conexión Wi-Fi gratuita. El establecimiento cuenta con centro de fitness, jardín y
+terraza. Entre los lugares de interés de la zona se incluyen el cuautipark, a 13 km,
+o el Arcos del Sitio, a 24 km.
+Las habitaciones incluyen armario y TV de pantalla plana. Algunos alojamientos
+del Resort &amp; Spa Puerta al Virreinato tienen balcón y las habitaciones incluyen
+cafetera. El baño es privado.
+Todos los días se sirve un desayuno americano.
+El establecimiento cuenta con sauna. El establecimiento cuenta con mesa de
+billar.
+En la recepción se proporciona información sobre la zona.
+El aeropuerto más cercano es el aeropuerto internacional Benito Juárez, situado a
+46 km del Resort &amp; Spa Puerta al Virreinato." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotel Mansión Tepotzotlan:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Calle Fraile 6 Esquina Monje Barrio Texcacoa, 54603 Tepotzotlán, México." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La Mansión Tepotzotlán está situada en Tepotzotlán, admite mascotas y ofrece
+conexión WiFi-gratuita, además de piscina al aire libre. Se proporciona
+aparcamiento privado gratuito.
+El bungalow tiene 3 dormitorios, cocina y zona de estar. Todos sus dormitorios
+tienen ducha y baño privado. Si los dormitorios se reservan por separado, la
+cocina y la zona de estar se comparten.
+Este hotel cuenta con pista de squash. Ciudad de México se encuentra a 33
+km de la Mansión Tepotzotlán y Villahermosa, a 29 km. El aeropuerto Benito
+Juárez está situado a 34 km." />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/mansiontepotzotlan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/posadadelfraile" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posada del Fraile:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Calle Fraile 6 Esquina Monje Barrio Texcacoa, 54603 Tepotzotlán, México." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La Posada del Fraile es una posada pequeña situada en Tepotzotlán y
+equipada con conexión Wi-Fi gratuita y aparcamiento. Está a solo 5 minutos a
+pie del precioso centro de la localidad.
+Todas las habitaciones de este establecimiento pintoresco están decoradas al
+estilo mexicano y disponen de TV de pantalla plana por cable y suelo de
+baldosa. El baño privado incluye artículos de aseo fabricados en la zona.
+En las inmediaciones hay varios restaurantes, entre los que se incluye un
+restaurante pequeño de comida local, situado a 600 metros de la Posada del
+Fraile.
+El Museo Nacional del Virreinato queda a 2 minutos a pie. El acueducto
+histórico Arcos del Sitio está a 25 minutos en coche. Ciudad de México se
+encuentra a 50 minutos en coche del establecimiento." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meson del Rio Posada Mexiquense:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Avenida Mariano Matamoros no 38, Barrio Tlacateco, 54605 Tepotzotlán,
+México," />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El Meson del Rio Posada Mexiquense tiene una terraza con jardín y fuente,
+aparcamiento gratuito y conexión Wi-Fi gratuita en todas sus instalaciones. Se
+halla a 5 minutos en coche de la reserva natural de Xochitla.
+Las habitaciones están decoradas al estilo rústico y disponen de suelo de
+baldosa y zona de estar. Todas cuentan con TV y baño privado con artículos
+de aseo gratuitos.
+A 5 minutos a pie hay gran variedad de restaurantes regionales.
+
+El Meson del Rio Posada Mexiquense se encuentra a 6 minutos en coche del
+pueblo mágico de Tepotzotlán y del Museo Nacional del Virreynato. La
+estación de autobuses está situada a 10 minutos a pie." />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/mesondelrio" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/cityexpresse" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotel City Express Tepotzotlán:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Autopista Mexico-Queretaro Km 42.5, 54600 Tepotzotlán, México." />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El Cityexpress Tepotzotlán se encuentra en la autopista de México-Querétaro,
+a 2 km de Tepotzotlán. Ofrece de forma gratuita WiFi, desayuno y un servicio
+de traslado dentro de un radio de 10 km desde el hotel.
+Las habitaciones del Tepotzotlán Cityexpress son elegantes y cuentan con
+suelo de baldosa, muebles de madera clara, aire acondicionado, ventilador y
+TV por cable. El baño es privado e incluye artículos de aseo.
+El establecimiento tiene recepción 24 horas, servicio de cambio de divisa y
+aparcamiento gratuito. El hotel está a 5 minutos en coche de la reserva
+ecológica de Xochitla y a 44 km de la ciudad de México." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

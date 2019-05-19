@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".DondeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:text="A Donde ir"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/virreinato2" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Museo Nacional del Virreinato:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plaza Hidalgo núm. 99, Barrio San Martín Tepotzotlán, Estado de México. C.P. 54600.
+\n HORARIOS: martes a domingo de 9:00 a 16:45 h. Lunes cerrado"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El Museo Nacional del Virreinato es un espacio que constituye un museo dentro de
+otro, pues por una parte el recinto que lo aloja constituye una importante muestra
+arquitectónica del barroco en México durante el siglo XVIII y por la otra reúne una
+atractiva colección de importantes objetos que fueron creados durante el periodo
+virreinal. La vasta colección que expone el Museo Nacional del Virreinato abarca
+principalmente un extenso número de expresiones religiosas que se manifestaron en
+el campo de la pintura, la escultura y las artes
+menores y aplicadas.." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Templo de San Francisco Javier:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plaza Hidalgo núm. 99, Barrio San Martín Tepotzotlán, Estado de México.C.P. 54600.
+\nHORARIOS: martes a Domingo de 10:00 a 18:00 h. Lunes cerrado."
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El Templo de San Francisco Javier forma parte del actual Museo del Virreinato y
+antiguo Colegio Jesuita de San Francisco Javier. Este templo tiene un estilo
+arquitectónico barroco churrigueresco novohispano edificado en la última parte del S.
+XVII.
+Tanto el interior como la fachada de la iglesia son obras maestras del barroco
+mexicano.
+Atrévete a descubrir su torre y fachada de proyección churrigueresca, sus dorados
+retablos, sus 3 fascinantes capillas laterales y los preciosos murales de Miguel
+Cabrera que se localizan en la bóveda de Crucería y el Presbiterio." />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/templofrancisco1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/arcos1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arcos del Sitio:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carretera Puente Grande s/n, Sn. Fco. Magú, Tepotzotlán, México.
+\nHORARIOS: lunes a domingo de 9:00 a 19:00 h."
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Centro Ecoturístico. Lugar maravilloso en donde tienes contacto con la naturaleza. Es
+el lugar idóneo para realizar actividades de ecoturismo, como senderismo y bicicleta
+de montaña; el lugar cuenta con estacionamiento, locales de comida, un centro de
+educación ambiental, alberca con chapoteadero, área de acampado, tirolesa, viveros,
+enfermería, zonas de asadores, puentes colgantes, renta de caballos y miradores
+turísticos. Arcos del Sitio es una excelente combinación entre la belleza de los
+paisajes naturales y la belleza creada por el hombre con este magnífico acueducto,
+que además fomenta la convivencia y la cultura del medio ambiente.." />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xochitla Parque Ecológico:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Carretera Circunvalación s/n, Tepotzotlán, México, C.P. 54600.
+\nHORARIOS: martes a domingo de 9:00 a 22:00 h. Lunes cerrado."
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Las instalaciones de Xochitla Parque Ecológico incluyen bellos jardines rodeados de
+flores, un área especial para campamentos, restaurante y amplios espacios para
+andar en bicicleta y patinar. La belleza natural del parque, aunado a sus atractivos y
+servicios, hacen de este espacio un lugar único dentro de la Ciudad de México, ideal
+para la convivencia familiar o con amigos y tus mascotas." />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    app:srcCompat="@drawable/mesondelrio" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
