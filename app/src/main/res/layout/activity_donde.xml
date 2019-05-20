@@ -18,41 +18,38 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="391dp"
+                android:layout_height="64dp"
                 android:layout_margin="15dp"
-                android:text="A Donde ir"
+                android:text="Donde ir"
                 android:textSize="30dp"
                 android:textStyle="bold" />
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
                     app:srcCompat="@drawable/virreinato2" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Museo Nacional del Virreinato:"
+                        android:layout_width="345dp"
+                        android:layout_height="49dp"
+                        android:text="Museo Nacional del Virreinato"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -64,8 +61,8 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="El Museo Nacional del Virreinato es un espacio que constituye un museo dentro de
+                        android:layout_height="175dp"
+                        android:text="   El Museo Nacional del Virreinato es un espacio que constituye un museo dentro de
 otro, pues por una parte el recinto que lo aloja constituye una importante muestra
 arquitectónica del barroco en México durante el siglo XVIII y por la otra reúne una
 atractiva colección de importantes objetos que fueron creados durante el periodo
@@ -81,23 +78,26 @@ menores y aplicadas.." />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/templofrancisco1" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Templo de San Francisco Javier:"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -109,7 +109,7 @@ menores y aplicadas.." />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="179dp"
                         android:text="El Templo de San Francisco Javier forma parte del actual Museo del Virreinato y
 antiguo Colegio Jesuita de San Francisco Javier. Este templo tiene un estilo
 arquitectónico barroco churrigueresco novohispano edificado en la última parte del S.
@@ -122,44 +122,31 @@ Cabrera que se localizan en la bóveda de Crucería y el Presbiterio." />
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
-                    app:srcCompat="@drawable/templofrancisco1" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
                     app:srcCompat="@drawable/arcos1" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Arcos del Sitio:"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -171,7 +158,7 @@ Cabrera que se localizan en la bóveda de Crucería y el Presbiterio." />
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="196dp"
                         android:text="Centro Ecoturístico. Lugar maravilloso en donde tienes contacto con la naturaleza. Es
 el lugar idóneo para realizar actividades de ecoturismo, como senderismo y bicicleta
 de montaña; el lugar cuenta con estacionamiento, locales de comida, un centro de
@@ -189,22 +176,26 @@ que además fomenta la convivencia y la cultura del medio ambiente.." />
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/xochitla" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Xochitla Parque Ecológico:"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -224,14 +215,6 @@ servicios, hacen de este espacio un lugar único dentro de la Ciudad de México,
 para la convivencia familiar o con amigos y tus mascotas." />
 
                 </LinearLayout>
-
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
-                    app:srcCompat="@drawable/mesondelrio" />
 
             </LinearLayout>
 

@@ -7,20 +7,6 @@
     android:fitsSystemWindows="true"
     tools:context=".Activity_hote">
 
-    <!--<ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="236dp"
-        android:layout_height="309dp"
-        app:srcCompat="@drawable/logofinal" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver en mapa" />
-
--->
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,50 +21,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
-                android:text="Hoteles"
+                android:text="Hospedajes"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
+                    android:layout_margin="20dp"
                     app:srcCompat="@drawable/hotelvirreinato" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hotel Resort &amp; Spa Puerta al Virreinato:"
+                        android:text="Hotel Resort &amp; Spa Puerta al Virreinato"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
-                        android:text="Calle Amistad 16, 54600 Tepotzotlán, México" />
+                        android:text="Calle Amistad 16, 54600 Tepotzotlán, Méxicoo"
+                        android:textStyle="italic" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Este establecimiento se encuentra en Tepotzotlán, a 3,2 km del Museo del. El
+                        android:text=" Este establecimiento se encuentra en Tepotzotlán, a 3,2 km del Museo del. El
 Virreinato, Resort &amp; Spa Puerta al Virreinato cuenta con piscina al aire libre y
 conexión Wi-Fi gratuita. El establecimiento cuenta con centro de fitness, jardín y
 terraza. Entre los lugares de interés de la zona se incluyen el cuautipark, a 13 km,
@@ -100,35 +82,39 @@ El aeropuerto más cercano es el aeropuerto internacional Benito Juárez, situad
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:srcCompat="@drawable/mansiontepotzotlan" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hotel Mansión Tepotzotlan:"
+                        android:text="Hotel Mansión Tepotzotlan"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
-                        android:text="Calle Fraile 6 Esquina Monje Barrio Texcacoa, 54603 Tepotzotlán, México." />
+                        android:text="Calle Fraile 6 Esquina Monje Barrio Texcacoa, 54603 Tepotzotlán, México"
+                        android:textStyle="italic" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="La Mansión Tepotzotlán está situada en Tepotzotlán, admite mascotas y ofrece
+                        android:text=" La Mansión Tepotzotlán está situada en Tepotzotlán, admite mascotas y ofrece
 conexión WiFi-gratuita, además de piscina al aire libre. Se proporciona
 aparcamiento privado gratuito.
 El bungalow tiene 3 dormitorios, cocina y zona de estar. Todos sus dormitorios
@@ -140,51 +126,39 @@ Juárez está situado a 34 km." />
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
-                    app:srcCompat="@drawable/mansiontepotzotlan" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
+                    android:layout_margin="20dp"
                     app:srcCompat="@drawable/posadadelfraile" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Posada del Fraile:"
+                        android:text="Posada del Fraile"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
-                        android:text="Calle Fraile 6 Esquina Monje Barrio Texcacoa, 54603 Tepotzotlán, México." />
+                        android:text="Calle Fraile 6 Esquina Monje Barrio Texcacoa, 54603 Tepotzotlán, México"
+                        android:textStyle="italic" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -203,37 +177,41 @@ histórico Arcos del Sitio está a 25 minutos en coche. Ciudad de México se
 encuentra a 50 minutos en coche del establecimiento." />
 
                 </LinearLayout>
-
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    app:srcCompat="@drawable/mesondelrio" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meson del Rio Posada Mexiquense:"
+                        android:text="Meson del Rio Posada Mexiquense"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
                         android:text="Avenida Mariano Matamoros no 38, Barrio Tlacateco, 54605 Tepotzotlán,
-México," />
+México"
+                        android:textStyle="italic" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -252,51 +230,39 @@ estación de autobuses está situada a 10 minutos a pie." />
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
-                    app:srcCompat="@drawable/mesondelrio" />
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:padding="15dp"
+                    android:layout_margin="20dp"
                     app:srcCompat="@drawable/cityexpresse" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:orientation="vertical"
-                    android:padding="15dp"
                     android:textAlignment="center">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Hotel City Express Tepotzotlán:"
+                        android:text="Hotel City Express Tepotzotlán"
+                        android:textSize="23dp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="italic"
-                        android:text="Autopista Mexico-Queretaro Km 42.5, 54600 Tepotzotlán, México." />
+                        android:text="Autopista Mexico-Queretaro Km 42.5, 54600 Tepotzotlán, México"
+                        android:textStyle="italic" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -314,6 +280,7 @@ ecológica de Xochitla y a 44 km de la ciudad de México." />
                 </LinearLayout>
 
             </LinearLayout>
+
 
 
         </LinearLayout>

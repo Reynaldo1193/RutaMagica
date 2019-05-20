@@ -66,7 +66,7 @@
             android:layout_weight="1"
             android:background="@drawable/square"
             android:gravity="center"
-            android:text="TURISTICO"
+            android:text="DONDE IR"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     </LinearLayout>

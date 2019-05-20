@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="15dp"
-                android:text="Hoteles"
+                android:text="Comida"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -37,7 +37,6 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:padding="15dp"
                     app:srcCompat="@drawable/losvirreyesrestaurante" />
 
                 <LinearLayout
@@ -114,7 +113,6 @@ internacional los fines de semana." />
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:padding="15dp"
                     app:srcCompat="@drawable/mesonmolino" />
 
             </LinearLayout>
@@ -131,7 +129,6 @@ internacional los fines de semana." />
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:padding="15dp"
                     app:srcCompat="@drawable/escenciacafe" />
 
                 <LinearLayout
@@ -206,7 +203,6 @@ internacional los fines de semana." />
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:padding="15dp"
                     app:srcCompat="@drawable/montecarlo" />
 
             </LinearLayout>

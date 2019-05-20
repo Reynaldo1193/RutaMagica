@@ -145,14 +145,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         mMap.setMaxZoomPreference(18);
-        mMap.setMinZoomPreference(11);
+        mMap.setMinZoomPreference(10);
 
         // Add a marker in tepozotlan and move the camera
         LatLng tepozotlan = new LatLng(19.714060, -99.223510);
 
         marcadorInicial = new MarkerOptions();
         marcadorInicial.position(tepozotlan);
-        marcadorInicial.title("Marker Tepozotlan");
+        marcadorInicial.title("Bienvenido a Tepozotlan");
         marcadorInicial.draggable(true);
 
         mMap.addMarker(marcadorInicial);
@@ -163,8 +163,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .zoom(13)
                 .build();
 
-        CreadorIconos("Hacienda El campanario",19.714574,-99.218876);
-        CreadorIconos("Fuente del salto del agua",19.714391,-99.220058);
+        //CreadorIconos("Hacienda El campanario",19.714574,-99.218876);
+        //CreadorIconos("Fuente del salto del agua",19.714391,-99.220058);
 
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
