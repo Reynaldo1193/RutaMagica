@@ -116,7 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         break;
 
                     case BottomSheetBehavior.STATE_EXPANDED:
-                        bottomSheetLayout.setBackgroundColor(Color.parseColor("#80FFFFFF"));
+                        bottomSheetLayout.setBackgroundColor(Color.parseColor("#99FFFFFF"));
                         txtDrag.setVisibility(View.GONE);
                         break;
                 }
@@ -142,25 +142,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
+        LatLng marcador=null;
+        double lat,lng;
+        String titulo;
+
         mMap = googleMap;
 
         mMap.setMaxZoomPreference(18);
         mMap.setMinZoomPreference(10);
 
-        // Add a marker in tepozotlan and move the camera
-        LatLng tepozotlan = new LatLng(19.714060, -99.223510);
+        Bundle bundle = getIntent().getExtras();
 
-        marcadorInicial = new MarkerOptions();
-        marcadorInicial.position(tepozotlan);
-        marcadorInicial.title("Bienvenido a Tepozotlan");
-        marcadorInicial.draggable(true);
+        if(bundle != null) {
+            lat = bundle.getDouble("Lat");
+            lng = bundle.getDouble("Lng");
+            titulo = bundle.getString("Titulo");
+            marcador = new LatLng(lat, lng);
+            marcadorInicial = new MarkerOptions();
+            marcadorInicial.position(marcador);
+            marcadorInicial.title(titulo);
+            marcadorInicial.draggable(true);
 
-        mMap.addMarker(marcadorInicial);
+            mMap.addMarker(marcadorInicial);
+        }else{
+            marcador = new LatLng(19.714060, -99.223510);
+            marcadorInicial = new MarkerOptions();
+            marcadorInicial.position(marcador);
+            marcadorInicial.title("Bienvenido a Tepozotlán");
+            marcadorInicial.draggable(true);
+
+            mMap.addMarker(marcadorInicial);
+        }
+
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
         CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(tepozotlan)
-                .zoom(13)
+                .target(marcador)
+                .zoom(15)
                 .build();
 
         //CreadorIconos("Hacienda El campanario",19.714574,-99.218876);

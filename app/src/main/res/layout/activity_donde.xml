@@ -30,7 +30,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -71,6 +72,15 @@ principalmente un extenso número de expresiones religiosas que se manifestaron 
 el campo de la pintura, la escultura y las artes
 menores y aplicadas.." />
 
+                    <Button
+                        android:id="@+id/btnDonde1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -78,7 +88,8 @@ menores y aplicadas.." />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -120,6 +131,15 @@ Atrévete a descubrir su torre y fachada de proyección churrigueresca, sus dora
 retablos, sus 3 fascinantes capillas laterales y los preciosos murales de Miguel
 Cabrera que se localizan en la bóveda de Crucería y el Presbiterio." />
 
+                    <Button
+                        android:id="@+id/btnDonde2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -127,7 +147,8 @@ Cabrera que se localizan en la bóveda de Crucería y el Presbiterio." />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -167,6 +188,15 @@ enfermería, zonas de asadores, puentes colgantes, renta de caballos y miradores
 turísticos. Arcos del Sitio es una excelente combinación entre la belleza de los
 paisajes naturales y la belleza creada por el hombre con este magnífico acueducto,
 que además fomenta la convivencia y la cultura del medio ambiente.." />
+
+                    <Button
+                        android:id="@+id/btnDonde3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
 
                 </LinearLayout>
 
@@ -213,6 +243,15 @@ flores, un área especial para campamentos, restaurante y amplios espacios para
 andar en bicicleta y patinar. La belleza natural del parque, aunado a sus atractivos y
 servicios, hacen de este espacio un lugar único dentro de la Ciudad de México, ideal
 para la convivencia familiar o con amigos y tus mascotas." />
+
+                    <Button
+                        android:id="@+id/btnDonde4"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
 
                 </LinearLayout>
 

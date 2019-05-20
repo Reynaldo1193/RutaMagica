@@ -67,6 +67,15 @@
                         android:text="Menú artesanal mexicano en gran edificio de estilo colonial, con patio y
 terraza (un buffet el fin de semana.)" />
 
+                    <Button
+                        android:id="@+id/btnFood1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -105,6 +114,15 @@ terraza (un buffet el fin de semana.)" />
                         android:layout_height="wrap_content"
                         android:text="Espacio cálido con terraza para platos mexicanos, carnes asadas y buffet
 internacional los fines de semana." />
+
+                    <Button
+                        android:id="@+id/btnFood2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
 
                 </LinearLayout>
 
@@ -158,6 +176,15 @@ internacional los fines de semana." />
                         android:layout_height="wrap_content"
                         android:text="Café , Comida Mediterránea" />
 
+                    <Button
+                        android:id="@+id/btnFood3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -195,6 +222,15 @@ internacional los fines de semana." />
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Descripcion muy buena comida, probablemente algo mexicano, clasico, delicioso y cosas asi" />
+
+                    <Button
+                        android:id="@+id/btnFood4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryFadded"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="VER EN MAPA"/>
 
                 </LinearLayout>
 

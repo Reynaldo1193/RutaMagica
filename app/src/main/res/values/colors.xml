@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#8bc34a</color>
+    <color name="colorPrimaryFadded">#4D8bc34a</color>
     <color name="colorPrimaryDark">#5a9216</color>
     <color name="colorPrimaryLight">#bef67a</color>
     <color name="colorAccent">#fbc02d</color>
+    <color name="colorAccentFadded">#4Dfbc02d</color>
 </resources>

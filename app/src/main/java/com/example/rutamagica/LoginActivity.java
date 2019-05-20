@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView txtPrueba;
     private Button btnLogin;
     private EditText txtCorreo, txtContrasenia;
-    private Usuario[] usuarios = new Usuario[2];
+    private Usuario[] usuarios = new Usuario[4];
     int i = 0;
 
     @Override
@@ -35,6 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         usuarios[0] = usuario;
         usuario = new Usuario("Andrea Pliego Ruiz","andreapliego18@gmail.com","bruno1803");
         usuarios[1] = usuario;
+        usuario = new Usuario("Laura Atzin Pérez Tapia","lau.atzin@gmail.com","lau144");
+        usuarios[2] = usuario;
+        usuario = new Usuario("José Juan Alba Dimas","jose_dimas@live.com","lafiestadelchivo11");
+        usuarios[3] = usuario;
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,17 +47,15 @@ public class LoginActivity extends AppCompatActivity {
                String contrasenia = txtContrasenia.getText().toString();
 
                for(int i = 0; i<usuarios.length; i++){
-                   if(correo.equals(usuarios[i].getCorreo())){
-                       if(contrasenia.equals(usuarios[i].getContrasenia())){
-                           Intent intent = new Intent(LoginActivity.this,MapsActivity.class);
-                           startActivity(intent);
-                           return;
-                       }else{
-                       }
+                   if(correo.equals(usuarios[i].getCorreo()) && contrasenia.equals(usuarios[i].getContrasenia())){
+                       Intent intent = new Intent(LoginActivity.this,MapsActivity.class);
+                       startActivity(intent);
+                       return;
                    }else {
-                       Toast.makeText(LoginActivity.this,"Lo sentimos, ese usuario no existe",Toast.LENGTH_SHORT).show();
+
                    }
                }
+                Toast.makeText(LoginActivity.this,"Lo sentimos, ese usuario no existe",Toast.LENGTH_SHORT).show();
             }
         });
 
